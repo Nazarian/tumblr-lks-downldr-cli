@@ -7,9 +7,7 @@ You have probably liked posts with text, photos, quotes, links, chats, audio, vi
 
 ## How to use
 
-If you're not a developer, using the a command line tool like this can be hard but no worries since I'm currently working in an user interface for it [tumblr-lks-downldr-ui](https://github.com/andresdavid90/tumblr-lks-downldr-ui). For using it right now you still need to use the command line to run it but it's basically because it is still a **work in progress**.
-
-We need [Node.js](https://nodejs.org) installed in order to run ```tumblr-lks-downldr```.
+Install [Node.js](https://nodejs.org) in order to run ```tumblr-lks-downldr```.
 
 Install the module **globally** and then you'll have access to the ```tumblr-lks-downldr-cli``` command anywhere on your system (use the same command to update it):
 ```sh
