@@ -1,0 +1,14 @@
+{
+  "name": "tumblr-lks-downldr-cli",
+  "version": "1.0.0",
+  "description": "Command line interface for the tumblr-lks-downldr module",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrés Carreño <andresdavid90@gmail.com> (http://andrescarreno.co/)",
+  "license": "MIT",
+  "dependencies": {
+    "stdio": "0.2.7"
+  }
+}
