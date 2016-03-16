@@ -3,12 +3,34 @@
   "version": "1.0.0",
   "description": "Command line interface for the tumblr-lks-downldr module",
   "main": "src/index.js",
+  "bin": {
+    "tumblr-lks-downldr-cli": "src/index.js"
+  },
+  "dependencies": {
+    "stdio": "0.2.7",
+    "tumblr-lks-downldr": "1.0.10"
+  },
+  "preferGlobal": "true",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andresdavid90/tumblr-lks-downldr-cli.git"
+  },
+  "keywords": [
+    "tumblr",
+    "likes",
+    "download",
+    "downloader",
+    "posts",
+    "save",
+    "backup"
+  ],
   "author": "Andrés Carreño <andresdavid90@gmail.com> (http://andrescarreno.co/)",
   "license": "MIT",
-  "dependencies": {
-    "stdio": "0.2.7"
-  }
+  "bugs": {
+    "url": "https://github.com/andresdavid90/tumblr-lks-downldr-cli/issues"
+  },
+  "homepage": "https://github.com/andresdavid90/tumblr-lks-downldr-cli#readme"
 }

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 var stdio = require('stdio');
-var tumblrLksDownldr = require('./../../tumblr-lks-downldr/src/index.js');
+var tumblrLksDownldr = require('tumblr-lks-downldr');
 
 var args = stdio.getopt(
   {
