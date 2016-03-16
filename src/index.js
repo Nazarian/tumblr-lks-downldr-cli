@@ -33,6 +33,6 @@ tumblrLksDownldr.setGlobalParams(
 );
 
 console.log('Tumblr Blog:', args.url);
-console.log('Saving in:', args.path);
+console.log('Saving in:', args.path || process.cwd());
 
 tumblrLksDownldr.getLikedPosts();
