@@ -7,7 +7,7 @@ You have probably liked posts with text, photos, quotes, links, chats, audio, vi
 
 ## How to use
 
-Install [Node.js](https://nodejs.org) in order to run ```tumblr-lks-downldr```.
+Install [Node.js](https://nodejs.org) in order to run ```tumblr-lks-downldr-cli```.
 
 Install the module **globally** and then you'll have access to the ```tumblr-lks-downldr-cli``` command anywhere on your system (use the same command to update it):
 ```sh
