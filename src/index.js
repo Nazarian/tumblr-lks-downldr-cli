@@ -28,7 +28,10 @@ tumblrLksDownldr.setGlobalParams(
   {
     url: args.url,
     postsToLoad: args.postsToLoad,
-    path: args.path
+    path: args.path,
+    onEnd: function(){
+      process.exit();
+    }
   }
 );
 
