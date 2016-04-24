@@ -5,6 +5,8 @@ CLI tool for downloading your precious [Tumblr](https://tumblr.com) likes.
 
 You have probably liked posts with text, photos, quotes, links, chats, audio, videos or/and answers BUT this is just for IMAGES.
 
+![tumblr-lks-downldr-cli](tumblr-lks-downldr-cli.jpg)
+
 ## How to use
 
 Install [Node.js](https://nodejs.org) in order to run ```tumblr-lks-downldr-cli```.

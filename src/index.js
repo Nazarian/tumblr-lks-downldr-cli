@@ -49,7 +49,7 @@ const params = {
       ┌┬┐┬ ┬┌┬┐┌┐ ┬  ┬─┐   ┬  ┬┌─┌─┐  ┌┬┐┌─┐┬ ┬┌┐┌┬  ┌┬┐┬─┐   ┌─┐┬  ┬
        │ │ ││││├┴┐│  ├┬┘───│  ├┴┐└─┐───│││ ││││││││   ││├┬┘───│  │  │
        ┴ └─┘┴ ┴└─┘┴─┘┴└─   ┴─┘┴ ┴└─┘  ─┴┘└─┘└┴┘┘└┘┴─┘─┴┘┴└─   └─┘┴─┘┴
-       ${JSON.parse(fs.readFileSync('./../package.json', 'utf8')).version}
+       2.0.3
 
        Tumblr Blog      :   ${args.url}
        Saving in        :   ${args.path || process.cwd()}
