@@ -54,12 +54,12 @@ const params = {
       ┌┬┐┬ ┬┌┬┐┌┐ ┬  ┬─┐   ┬  ┬┌─┌─┐  ┌┬┐┌─┐┬ ┬┌┐┌┬  ┌┬┐┬─┐   ┌─┐┬  ┬
        │ │ ││││├┴┐│  ├┬┘───│  ├┴┐└─┐───│││ ││││││││   ││├┬┘───│  │  │
        ┴ └─┘┴ ┴└─┘┴─┘┴└─   ┴─┘┴ ┴└─┘  ─┴┘└─┘└┴┘┘└┘┴─┘─┴┘┴└─   └─┘┴─┘┴
-       2.1.0
+       2.1.1
 
-       Tumblr Blog      :   ${args.url}
-       Saving in        :   ${args.path || process.cwd()}
-       Posts to load    :   ${info.postsToLoad}
-       Offset posts by    :  ${args.postsOffset}
+       Tumblr Blog        :   ${args.url}
+       Saving in          :   ${args.path || process.cwd()}
+       Posts to load      :   ${info.postsToLoad}
+       Offset posts by    :   ${args.postsOffset || 0}
 
        Note: Be patient if you requested a lot of posts.
 
