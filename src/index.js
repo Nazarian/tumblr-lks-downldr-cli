@@ -27,6 +27,11 @@ const args = stdio.getopt(
       args: 1,
       description: 'Number of liked posts that you want to download.'
     },
+    'postsOffset': {
+      key: 'o',
+      args: 1,
+      description: 'Which liked posts to start at (where 0 is most recent).'
+    },
     'path': {
       key: 'p',
       args: 1,
@@ -54,6 +59,7 @@ const params = {
        Tumblr Blog      :   ${args.url}
        Saving in        :   ${args.path || process.cwd()}
        Posts to load    :   ${info.postsToLoad}
+       Offset posts by    :  ${args.postsOffset}
 
        Note: Be patient if you requested a lot of posts.
 
@@ -84,6 +90,10 @@ if(args.postsToLoad && args.postsToLoad < 1){
 
 if(args.postsToLoad){
   params.postsToLoad = args.postsToLoad;
+}
+
+if(args.postsOffset){
+  params.postsOffset = args.postsOffset;
 }
 
 if(args.path){
