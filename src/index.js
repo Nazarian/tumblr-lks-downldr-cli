@@ -4,15 +4,14 @@
 /**
  * Node Dependencies
  */
-const fs = require('fs')
 const stdio = require('stdio');
 const tumblrLksDownldr = require('tumblr-lks-downldr');
-const ProgressBar = require('progress');
 
 /**
  * Module Globals
  */
-let downloadBar;
+let imagesToDownload = 0;
+let downloadProcess = 0;
 
 const args = stdio.getopt(
   {
@@ -41,8 +40,10 @@ const args = stdio.getopt(
 );
 
 const trackDownloadProgress = () => {
-  downloadBar.tick();
-  if (downloadBar.complete) {
+  downloadProcess++;
+  const downloadPercentage = ((downloadProcess * 100) / imagesToDownload).toFixed(2);
+  console.log(`       ${downloadProcess} of ${imagesToDownload} downloaded (${downloadPercentage}%)`);
+  if (downloadProcess === imagesToDownload) {
     console.log('\n       Done!');
   }
 };
@@ -54,27 +55,28 @@ const params = {
       ┌┬┐┬ ┬┌┬┐┌┐ ┬  ┬─┐   ┬  ┬┌─┌─┐  ┌┬┐┌─┐┬ ┬┌┐┌┬  ┌┬┐┬─┐   ┌─┐┬  ┬
        │ │ ││││├┴┐│  ├┬┘───│  ├┴┐└─┐───│││ ││││││││   ││├┬┘───│  │  │
        ┴ └─┘┴ ┴└─┘┴─┘┴└─   ┴─┘┴ ┴└─┘  ─┴┘└─┘└┴┘┘└┘┴─┘─┴┘┴└─   └─┘┴─┘┴
-       2.1.2
+       2.1.6
 
        Tumblr Blog        :   ${args.url}
        Saving in          :   ${args.path || process.cwd()}
        Posts to load      :   ${info.postsToLoad}
        Offset posts by    :   ${args.postsOffset || 0}
 
-       Note: Be patient if you requested a lot of posts.
-
        Loading list in memory...
     `);
   },
   onFetch: (info) => {
-    if(info.downloadedPosts === Number(args.postsToLoad)){
-      downloadBar = new ProgressBar(
-        `       Downloading: :percent Current Image: :current Total: ${info.imagesToDownload} Estimated Time: :etas`,
-        {
-          total: info.imagesToDownload
-        }
-      );
+    console.log(`       Posts To Download: ${info.postsToLoad} Downloaded Posts: ${info.downloadedPosts} Images to Download: ${info.imagesToDownload}`);
+    imagesToDownload = info.imagesToDownload;
+  },
+  onDownloadStart: (info) => {
+    if (info.postsToLoad > info.downloadedPosts) {
+      console.log(`
+       ${info.postsToLoad - info.downloadedPosts} posts are unreachable...`);
     }
+    console.log(`
+       Downloading ${info.filesToDownload} files...
+    `);
   },
   onSuccess: (info) => {
     trackDownloadProgress();
