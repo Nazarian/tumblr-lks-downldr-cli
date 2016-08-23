@@ -1,13 +1,12 @@
 {
   "name": "tumblr-lks-downldr-cli",
-  "version": "2.1.2",
+  "version": "2.1.5",
   "description": "Command line interface for the tumblr-lks-downldr module",
   "main": "src/index.js",
   "bin": {
     "tumblr-lks-downldr-cli": "src/index.js"
   },
   "dependencies": {
-    "progress": "1.1.8",
     "stdio": "0.2.7",
     "tumblr-lks-downldr": "^1.2.2"
   },
