@@ -1,5 +1,6 @@
 # tumblr-lks-downldr-cli
 [![npm version](https://badge.fury.io/js/tumblr-lks-downldr-cli.svg)](https://www.npmjs.com/package/tumblr-lks-downldr-cli)
+[![downloads total](https://img.shields.io/npm/dt/tumblr-lks-downldr-cli.svg)](https://www.npmjs.com/package/tumblr-lks-downldr-cli)
 
 CLI tool for downloading your precious [Tumblr](https://tumblr.com) likes.
 
