@@ -35,7 +35,12 @@ const args = stdio.getopt(
       key: 'p',
       args: 1,
       description: 'Path where the images will be saved.'
-    }
+   },
+   'attribution': {
+      key: 'a',
+      args: 0,
+      description: 'Save image captions as txt files (will also rename images)'
+   }
   }
 );
 
@@ -55,12 +60,13 @@ const params = {
       ┌┬┐┬ ┬┌┬┐┌┐ ┬  ┬─┐   ┬  ┬┌─┌─┐  ┌┬┐┌─┐┬ ┬┌┐┌┬  ┌┬┐┬─┐   ┌─┐┬  ┬
        │ │ ││││├┴┐│  ├┬┘───│  ├┴┐└─┐───│││ ││││││││   ││├┬┘───│  │  │
        ┴ └─┘┴ ┴└─┘┴─┘┴└─   ┴─┘┴ ┴└─┘  ─┴┘└─┘└┴┘┘└┘┴─┘─┴┘┴└─   └─┘┴─┘┴
-       2.1.6
+       2.2.0
 
        Tumblr Blog        :   ${args.url}
        Saving in          :   ${args.path || process.cwd()}
        Posts to load      :   ${info.postsToLoad}
        Offset posts by    :   ${args.postsOffset || 0}
+       Save attribution   :   ${args.attribution ? 'yes' : 'no' }
 
        Loading list in memory...
     `);
@@ -100,6 +106,10 @@ if(args.postsOffset){
 
 if(args.path){
   params.path = args.path;
+}
+
+if(args.attribution){
+  params.attribution = true;
 }
 
 tumblrLksDownldr.setGlobalParams(

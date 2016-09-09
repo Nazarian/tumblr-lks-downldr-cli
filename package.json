@@ -1,6 +1,6 @@
 {
   "name": "tumblr-lks-downldr-cli",
-  "version": "2.1.6",
+  "version": "2.2.0",
   "description": "Command line interface for the tumblr-lks-downldr module",
   "main": "src/index.js",
   "bin": {
@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "stdio": "0.2.7",
-    "tumblr-lks-downldr": "^1.2.2"
+    "tumblr-lks-downldr": "^1.5.0"
   },
   "preferGlobal": "true",
   "scripts": {

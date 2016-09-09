@@ -27,6 +27,11 @@ And of course a custom path if you want:
 tumblr-lks-downldr-cli -u 'andresdavid90.tumblr.com' -l 1000 -p 'my-stupid-folder'
 ```
 
+If you want to save the image captions, add the -a flag:
+```sh
+tumblr-lks-downldr-cli -u 'andresdavid90.tumblr.com' -l 1000 -p 'my-stupid-folder' -a
+```
+
 ## Issues
 
 I'm definitely trying to maintain the utility updated so if anyone find an issue, don't hesitate to report it [here](https://github.com/andresdavid90/tumblr-lks-downldr-cli/issues).
