@@ -19,19 +19,19 @@ npm install -g tumblr-lks-downldr-cli
 
 Then just run ```tumblr-lks-downldr-cli``` defining you Tumblr url and the number of likes that you want to download (if you don't set any number the default is the whole list of liked posts that can actually be really big):
 ```sh
-tumblr-lks-downldr-cli -u 'andresdavid90.tumblr.com' -l 1000
+tumblr-lks-downldr-cli -u 'andrscrrn.tumblr.com' -l 1000
 ```
 
 And of course a custom path if you want:
 ```sh
-tumblr-lks-downldr-cli -u 'andresdavid90.tumblr.com' -l 1000 -p 'my-stupid-folder'
+tumblr-lks-downldr-cli -u 'andrscrrn.tumblr.com' -l 1000 -p 'my-stupid-folder'
 ```
 
 If you want to save the image captions, add the -a flag:
 ```sh
-tumblr-lks-downldr-cli -u 'andresdavid90.tumblr.com' -l 1000 -p 'my-stupid-folder' -a
+tumblr-lks-downldr-cli -u 'andrscrrn.tumblr.com' -l 1000 -p 'my-stupid-folder' -a
 ```
 
 ## Issues
 
-I'm definitely trying to maintain the utility updated so if anyone find an issue, don't hesitate to report it [here](https://github.com/andresdavid90/tumblr-lks-downldr-cli/issues).
+I'm definitely trying to maintain the utility updated so if anyone find an issue, don't hesitate to report it [here](https://github.com/andrscrrn/tumblr-lks-downldr-cli/issues).

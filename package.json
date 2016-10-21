@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andresdavid90/tumblr-lks-downldr-cli.git"
+    "url": "git+https://github.com/andrscrrn/tumblr-lks-downldr-cli.git"
   },
   "keywords": [
     "tumblr",
@@ -27,10 +27,10 @@
     "save",
     "backup"
   ],
-  "author": "Andrés Carreño <andresdavid90@gmail.com> (http://andrescarreno.co/)",
+  "author": "Andrés Carreño <hello@andrescarreno.co> (http://andrescarreno.co/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/andresdavid90/tumblr-lks-downldr-cli/issues"
+    "url": "https://github.com/andrscrrn/tumblr-lks-downldr-cli/issues"
   },
-  "homepage": "https://github.com/andresdavid90/tumblr-lks-downldr-cli#readme"
+  "homepage": "https://github.com/andrscrrn/tumblr-lks-downldr-cli#readme"
 }
